@@ -1,0 +1,51 @@
+<style>h1 { color: red; } body {background-color: black; color: white; } </style> 
+<style> button { background-color: yellow; color: black; padding: 12px 20px; border: none; border-radius: 8px; } </style> 
+<style> button:hover {background-color: red; color: white; } </style>
+<h1>Ash Builds AI</h1>
+
+<p>I built this.</p>
+
+<h2>Technical Danger Level: <span id="dangerLevel">0</span></h2>
+
+<p id="dangerMessage">Currently supervised.</p>
+
+<button onclick="increaseDanger()">Increase Technical Danger</button>
+
+<script>
+
+    function increaseDanger() {
+        danger = danger + 1;
+
+        document.getElementById("dangerLevel").innerText = danger;
+
+        if (danger == 1) {
+            document.getElementById("dangerMessage").innerText =
+                "Can now create a folder without assistance.";
+        }
+
+        if (danger == 2) {
+            document.getElementById("dangerMessage").innerText =
+                "Has discovered Git. Husband mildly concerned.";
+        }
+
+        if (danger == 3) {
+            document.getElementById("dangerMessage").innerText =
+                "Has successfully pushed to GitHub. Pour another wine.";
+        }
+
+        if (danger == 4) {
+            document.getElementById("dangerMessage").innerText =
+                "Built an interactive webpage. Nobody panic.";
+        }
+
+        if (danger >= 5) {
+            document.getElementById("dangerMessage").innerText =
+                "UNSUPERVISED ACCESS TO TECHNOLOGY NO LONGER RECOMMENDED.";
+        }
+    
+            if (danger >= 6) {
+            document.getElementById("dangerMessage").innerText =
+                "You should put down the wine.";
+            }
+    }
+</script>
