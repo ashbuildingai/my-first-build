@@ -18,7 +18,7 @@
         danger = danger + 1;
 
         document.getElementById("dangerLevel").innerText = danger;
-
+    
         if (danger == 1) {
             document.getElementById("dangerMessage").innerText =
                 "Can now create a folder without assistance.";
@@ -39,14 +39,35 @@
                 "Built an interactive webpage. Nobody panic.";
         }
 
-        if (danger >= 5) {
+        if (danger == 5) {
             document.getElementById("dangerMessage").innerText =
                 "UNSUPERVISED ACCESS TO TECHNOLOGY NO LONGER RECOMMENDED.";
         }
     
-            if (danger >= 6) {
+            if (danger == 6) {
             document.getElementById("dangerMessage").innerText =
                 "You should put down the wine.";
             }
+
+    
+            if (danger == 7) {
+            document.getElementById("dangerMessage").innerText =
+                "Okay, now you're getting somewhere.";
+            }
+            if (danger == 8) {
+            document.getElementById("dangerMessage").innerText =
+           "Wow, is that HTML + CSS + Javascript? You are a wizard!";
+            } 
+    
+            if (danger == 9) {
+            document.getElementById("dangerMessage").innerText =
+                "You even thought to threat-model what we were doing, inspect the code, verify the repo exposure AND confirm 2FA before shipping... great job!";
+            }
+        
+            if (danger >= 10) {
+            document.getElementById("dangerMessage").innerText =
+                "It's live, you're cookin' now";
+            }
     }
+
 </script>
